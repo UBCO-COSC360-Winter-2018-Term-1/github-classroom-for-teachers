@@ -1,7 +1,6 @@
 # GitHub Classroom Guide for Teachers
 
-This is a guide for using GitHub Classroom to assist or run your class. We are using GitHub Classroom for a class where the assignments are primarily, if not all, R Markdown files. However, this guide should be applicable to most classes.
-
+This is a guide for using GitHub Classroom to assist or run your class. We are using GitHub Classroom for a class and this guide should be applicable to most classes.
 
 ### Setting up GitHub Classroom:
 1. If you plan on repeating the class in future semesters, set up a "master" classroom organization. If you are teaching a class titled "Intro to Statistics", we recommend calling this organization intro-statistics-master, or something similar. We use this organization to host all assignments that will be used in the current and future versions of the class. Each assignment should be its own repository. When using GitHub classroom to send out assignments, we can use repositories from this organization as starter code. If changes need to be made for future years, you can change the repository in the organization without affecting the current version of the class. If you want the assignments to be private, you can apply for an educational discount that will grant the organization unlimited repositories. Go to https://github.com/settings/connections/applications/64a051cf1598b9f0658f and grant GitHub Classroom organizational access to the master organization.
@@ -49,7 +48,7 @@ Here are the steps.
 1. Have a directory for the class in your local computer. Inside of this directory, I would recommend making a directory titled something similar to `homework-grading`. The way we will use this directory is that we have a shell script (more on this in the next step) that will create a sub-directory within the `homework-grading` named after an assignment prefix. The script then automatically clones all of the students' repos for this assignment into the directory.
 
 
-2. Navigate to the `homework-grading` directory. The shell scripts we will be using are from https://github.com/konzy/mass_clone. You can either clone this repo, or my forked version https://github.com/jfiksel/mass_clone, into the `homework-grading` directory. Currently, my forked version allows you to pull changes in from a student's repository if they have made changes after your initial cloning. At this point, your directory structure should be as follows:
+2. Navigate to the `homework-grading` directory. The shell scripts we will be using are from https://github.com/konzy/mass_clone. You can either clone this repo, or the forked version https://github.com/jfiksel/mass_clone, into the `homework-grading` directory. Currently, this forked version allows you to pull changes in from a student's repository if they have made changes after your initial cloning. At this point, your directory structure should be as follows:
 
 ```
 class-fall-2017
